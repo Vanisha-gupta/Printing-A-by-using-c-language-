@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+  int c,r,row;
+printf("enter row number greater or equal to 6 for better results :-");
+scanf("%d",&row);
+for(r=0;r<row;r++)
+{ 
+  for(c=0;c<=row/2;c++)
+  {
+    if((c==0||c==row/2)&& r!=0 || r==row/2 || r==0&&c!=0&&c!=row/2)
+      printf("*");
+    else
+    printf(" "); 
+  } 
+printf("\n");
+}
+}
+    
